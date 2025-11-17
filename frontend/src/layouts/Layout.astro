@@ -1,0 +1,23 @@
+---
+import "../styles/global.css"
+import HeaderComponent from "../components/HeaderComponent.astro"
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Starlink</title>
+</head>
+<body class="bg-[url('/residential_c_hero_d.webp')] bg-cover bg-center 		min-h-screen">
+	<HeaderComponent />
+
+	<main>
+      <slot />
+    </main>
+
+	
+</body>
+</html>

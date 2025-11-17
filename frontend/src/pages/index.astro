@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { fetchFromAPI } from "../lib/conection.ts";
+
+const inicio = await fetchFromAPI('inicio');
+---
+
+
+<Layout>
+  <div class="flex flex-col min-h-screen items-center text-center gap-10 py-5 pb-5 space-x-10 justify-items-center justify-center">
+	<h1 class="text-white font-bold text-6xl">{inicio?.titulo}</h1>
+
+	<h2 class="text-white font-semibold text-2xl">{inicio?.subtitulo}</h2>
+	{inicio?.imagen}
+  </div>
+</Layout>

@@ -1,0 +1,10 @@
+---
+import { MenuNavItems } from "../data/menu";
+---
+<div class="flex justify-items-center items-center">
+    {MenuNavItems.map((item)=>(
+        <div class="justify-between gap-10 px-10 space-x-10">
+            <a href={item.href}>{item.titulo}</a>
+        </div>
+    ))}
+</div>
